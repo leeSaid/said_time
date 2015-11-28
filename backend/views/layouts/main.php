@@ -33,7 +33,17 @@ AppAsset::register($this);
             ]);
             $menuItems = [
                 ['label' => 'Home', 'url' => ['/site/index']],
+
             ];
+
+
+         //   ['label' => 'Home', 'url' => ['/site/index']],
+        $menuItems[] =['label'=>'permission','url'=>['/rbac/permission']];
+            //['label'=>'authitem','url'=>['/rbac/authitem']],
+        $menuItems[] = ['label'=>'role','url'=>['/rbac/role']];
+        $menuItems[] = ['label'=>'assignment','url'=>['/rbac/assignment']];
+
+
             $menuItems[]=['label'=>'paper','url'=>['/paper/index']];
             if(Yii::$app->user->can('view-user'))
                 $menuItems[]=['label'=>'user','url'=>['/user/index']];
