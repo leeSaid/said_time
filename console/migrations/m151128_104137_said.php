@@ -11,7 +11,7 @@ class m151128_104137_said extends Migration
         $said_comment = '{{%said_comment}}';
         $said_time    ='{{%said}}';
         $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_general_ci ENGINE=InnoDB';
-        $said_tag='{{%blog_tag}}';
+        $said_tag='{{%said_tag}}';
         //said_time
         $this->createTable($said_time, [
             'id' => Schema::TYPE_PK,
